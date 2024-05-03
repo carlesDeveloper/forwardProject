@@ -2340,13 +2340,19 @@
   "product_view.button.add_set_to_cart": [
     {
       "type": 0,
-      "value": "Add Set to Cart"
+      "value": "Add to Cart"
     }
   ],
   "product_view.button.add_to_cart": [
     {
       "type": 0,
       "value": "Add to Cart"
+    }
+  ],
+  "product_view.button.add_to_whishlist": [
+    {
+      "type": 0,
+      "value": "Add to Whishlist"
     }
   ],
   "product_view.button.update": [

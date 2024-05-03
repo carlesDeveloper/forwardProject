@@ -157,8 +157,12 @@ const ProductView = forwardRef(
                     id: 'product_view.button.add_to_cart'
                 }),
                 addSetToCart: intl.formatMessage({
-                    defaultMessage: 'Add Set to Cart',
+                    defaultMessage: 'Add to Cart',
                     id: 'product_view.button.add_set_to_cart'
+                }),
+                addWishlist: intl.formatMessage({
+                    defaultMessage: 'Add to Wishlist',
+                    id: 'product_view.button.add_to_wishlist'
                 })
             }
 
@@ -216,6 +220,19 @@ const ProductView = forwardRef(
                     </Button>
                 )
             }
+            buttons.push(
+                <Button
+                    key="wishlist-button"
+                    onClick={handleCartItem}
+                    disabled={isBasketLoading || showInventoryMessage}
+                    isLoading={isBasketLoading}
+                    width="100%"
+                    variant="outline"
+                    marginBottom={4}
+                >
+                    {buttonText.addWishlist}
+                </Button>
+            )
 
             return buttons
         }

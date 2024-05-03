@@ -1010,10 +1010,13 @@
     "defaultMessage": "Starting at {price}"
   },
   "product_view.button.add_set_to_cart": {
-    "defaultMessage": "Add Set to Cart"
+    "defaultMessage": "Add to Cart"
   },
   "product_view.button.add_to_cart": {
     "defaultMessage": "Add to Cart"
+  },
+  "product_view.button.add_to_whishlist": {
+    "defaultMessage": "Add to Wishlist"
   },
   "product_view.button.update": {
     "defaultMessage": "Update"
