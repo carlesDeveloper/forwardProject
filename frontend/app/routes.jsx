@@ -40,6 +40,7 @@ const ProductDetail = loadable(() => import('./pages/product-detail'), {fallback
 const ProductList = loadable(() => import('./pages/product-list'), {
     fallback
 })
+const Wishlist = loadable(() => import('./pages/wishlist'))
 const PageNotFound = loadable(() => import('./pages/page-not-found'))
 
 export const routes = [
@@ -84,6 +85,11 @@ export const routes = [
     {
         path: '/cart',
         component: Cart,
+        exact: true
+    },
+    {
+        path: '/wishlist',
+        component: Wishlist,
         exact: true
     },
     {

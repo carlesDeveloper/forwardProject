@@ -260,6 +260,9 @@ const ListMenu = ({root, maxColumns = MAXIMUM_NUMBER_COLUMNS}) => {
                                 </Box>
                             )
                         })}
+                        <Box>
+                            <Link to={"/wishlist"}>Wish list</Link>
+                        </Box>
                     </Stack>
                 ) : (
                     <Center p="2">
